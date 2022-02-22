@@ -24,7 +24,7 @@ function settext(){
     $("#showcard5").text(colortext(deckA[4]));
 }
 
-//input牌號 return牌名
+//input牌號,return牌名
 function colortext(a){
     let pre;
     a-=1

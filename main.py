@@ -1,5 +1,4 @@
 from flask import Flask, render_template, send_file
-import game
 app = Flask(__name__)
 
 @app.route('/')
