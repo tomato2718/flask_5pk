@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>5PK</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='tomato.png')}}" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static', filename='css/styles.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ url_for('static', filename='css/edit.css') }}" type="text/css" rel="stylesheet" />
@@ -48,38 +48,58 @@
                             <div class="col" id="score">0</div>
                         </div>
                     </div>
-                    <!--卡片區-->
-                    <div class="row cardrow row-cols-5 g-2 g-lg-3 " id="">
+                    <!--卡片區，卡片與操作修改為cardlayout，配合遊戲階段切換?-->
+                    <div class="row cardrow row-cols-5 g-2 g-lg-3">
                         <div class="col">
-                            <div class="card border bg-light" id="showcard1">1</div>
+                            <div class="card border bg-light">
+                                <div class="cardbody">
+                                    <h5 class="card-title cardtext" id="showcard1">123</h5>
+                                </div>
+                            </div>
                             <div class="form-check lock">
                                 <input class="form-check-input" type="checkbox" id="card1" value="card1">
                                 <label class="form-check-label" for="card1">鎖定</label>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border bg-light" id="showcard2">2</div>
+                            <div class="card border bg-light">
+                                <div class="cardbody">
+                                    <h5 class="card-title cardtext" id="showcard2">123</h5>
+                                </div>
+                            </div>
                             <div class="form-check lock">
                                 <input class="form-check-input" type="checkbox" id="card2" value="card2">
                                 <label class="form-check-label" for="card2">鎖定</label>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border bg-light" id="showcard3">3</div>
+                            <div class="card border bg-light">
+                                <div class="cardbody">
+                                    <h5 class="card-title cardtext" id="showcard3">123</h5>
+                                </div>
+                            </div>
                             <div class="form-check lock">
                                 <input class="form-check-input" type="checkbox" id="card3" value="card3">
                                 <label class="form-check-label" for="card3">鎖定</label>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border bg-light" id="showcard4">4</div>
+                            <div class="card border bg-light">
+                                <div class="cardbody">
+                                    <h5 class="card-title cardtext" id="showcard4">123</h5>
+                                </div>
+                            </div>
                             <div class="form-check lock">
                                 <input class="form-check-input" type="checkbox" id="card4" value="card4">
                                 <label class="form-check-label" for="card4">鎖定</label>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border bg-light" id="showcard5">5</div>
+                            <div class="card border bg-light">
+                                <div class="cardbody">
+                                    <h5 class="card-title cardtext" id="showcard5">123</h5>
+                                </div>
+                            </div>
                             <div class="form-check lock">
                                 <input class="form-check-input" type="checkbox" id="card5" value="card5">
                                 <label class="form-check-label" for="card5">鎖定</label>
@@ -91,7 +111,9 @@
                         <div>
                             <button type="submit" class="btn btn-dark submitbtn" onclick="draw()">確定</button>
                         </div>
-                        
+                        <div>
+                            <button type="submit" class="btn btn-dark submitbtn" onclick="draw()">確定</button>
+                        </div>
                     </div>
                         
                 </div>
